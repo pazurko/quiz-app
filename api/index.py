@@ -8,7 +8,7 @@ All routes are prefixed with /api.
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from routes import questions, quiz, history
+from .routes import questions, quiz, history
 
 app = FastAPI(title="Quiz App API", version="1.0.0")
 
