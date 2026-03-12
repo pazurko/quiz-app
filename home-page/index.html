@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mazur.page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0e0f0e;
+      --card: #161817;
+      --border: #2a2e2a;
+      --text: #e8ece8;
+      --muted: #7a897a;
+      --accent: #4ade80;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+    }
+    h1 {
+      font-family: 'Instrument Serif', serif;
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+    .dot { color: var(--accent); }
+    .subtitle {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 56px;
+    }
+    .apps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      width: 100%;
+      max-width: 600px;
+    }
+    .app-card {
+      display: block;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      text-decoration: none;
+      color: var(--text);
+      transition: all 0.15s;
+    }
+    .app-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .app-icon { font-size: 2rem; margin-bottom: 12px; }
+    .app-name { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+    .app-desc { font-size: 13px; color: var(--muted); line-height: 1.5; }
+    .app-tag {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 11px;
+      color: var(--accent);
+      background: #1a3a26;
+      padding: 2px 8px;
+      border-radius: 100px;
+      font-family: monospace;
+    }
+    footer {
+      margin-top: 64px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <h1>mazur<span class="dot">.</span>page</h1>
+  <p class="subtitle">Personal apps by Michal Mazur</p>
+
+  <div class="apps">
+    <a href="https://quiz-app.mazur.page" class="app-card">
+      <div class="app-icon">🧬</div>
+      <div class="app-name">BioQuiz</div>
+      <div class="app-desc">Study tool for LF UPJŠ Košice entrance exam. 1500 biology questions.</div>
+      <span class="app-tag">quiz-app.mazur.page</span>
+    </a>
+
+    <!-- Add more apps here as you build them -->
+  </div>
+
+  <footer>Built with Vue, FastAPI & Supabase</footer>
+</body>
+</html>

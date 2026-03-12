@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.py[co]
+*.egg-info/
+*.egg
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+dist/
+.output/
+
+# Environment files (NEVER commit these)
+.env
+.env.local
+frontend/.env.local
+api/.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Editor
+*.swp
+
+# Vercel
+.vercel
