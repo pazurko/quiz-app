@@ -5,7 +5,7 @@ api/routes/quiz.py — Endpoints for creating and submitting quiz sessions.
 from fastapi import APIRouter, HTTPException, Header
 from pydantic import BaseModel
 from typing import Optional
-from db import get_supabase
+from ..db import get_supabase
 import jwt  # PyJWT — to decode Supabase JWT and get user_id
 
 router = APIRouter()

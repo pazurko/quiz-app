@@ -3,7 +3,7 @@ api/routes/history.py — Endpoints for quiz history.
 """
 
 from fastapi import APIRouter, Header, Query
-from db import get_supabase
+from ..db import get_supabase
 import jwt
 
 router = APIRouter()

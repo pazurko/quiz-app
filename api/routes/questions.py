@@ -5,7 +5,7 @@ api/routes/questions.py — Endpoints for fetching questions and subjects/catego
 from fastapi import APIRouter, Query, HTTPException, Header
 from typing import Optional
 from datetime import datetime, timezone
-from db import get_supabase
+from ..db import get_supabase
 import jwt
 
 router = APIRouter()
